@@ -93,6 +93,7 @@ q_vonal.ábrázol('grey')
 Rmin_vonal = Végtelen_egyenes([xD,yD], metszéspont(q_vonal,görbe))
 Rmin_vonal.ábrázol('grey')
 Rmin = (xD/Rmin_vonal.y_metszet())-1
+plt.annotate(f'Metszet: {round(Rmin_vonal.y_metszet(),3)} \nRmin: {round(Rmin,3)}', [0, 1.1*(Rmin_vonal.y_metszet())])
 
 felső_munkavonal_y_metszet = xD/(Rmin*R_Rmin_arány+1)
 
